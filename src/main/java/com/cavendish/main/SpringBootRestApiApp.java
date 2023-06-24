@@ -20,8 +20,8 @@ public class SpringBootRestApiApp implements WebMvcConfigurer {
 		configurer.setDefaultTimeout(30_000);
 	}
 
-	@Bean
-	public ThreadPoolTaskExecutor mvcTaskExecutor() {
+    @Bean
+    ThreadPoolTaskExecutor mvcTaskExecutor() {
 		ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
 		taskExecutor.setThreadNamePrefix("mvc-task-");
 		return taskExecutor;

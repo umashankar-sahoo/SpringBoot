@@ -142,7 +142,6 @@ public class RestApiController implements ErrorController {
 		return "Error handling";
 	}
 
-	@Override
 	public String getErrorPath() {
 		return PATH;
 	}
